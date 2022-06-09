@@ -1,7 +1,7 @@
 ## how to run
 First, clone source code.
 ```
-clone git@github.com:luong-dung-dev/handle_invoice.git
+git clone git@github.com:luong-dung-dev/handle_invoice.git
 ```
 
 Change to handle_invoice directory.
