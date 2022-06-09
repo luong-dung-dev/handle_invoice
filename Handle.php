@@ -21,7 +21,7 @@
       $this->invoice   = new Invoice($invoiceData);
     }
 
-    public function findSupplierOfInvoiceUse() {
+    public function findSupplierOfInvoice() {
       #Create an array key => value with key is words extracted from the invoice.
       foreach($this->invoice->words as $word) {
         $wordList[$word->word] = $word;

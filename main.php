@@ -3,7 +3,7 @@
 
   #Initialize handle instance
   $handle   = new Handle("invoice.txt", "suppliernames.txt");
-  $supplier = $handle->findSupplierOfInvoiceUse();
+  $supplier = $handle->findSupplierOfInvoice();
 
   if(empty($supplier)) echo "No any match!";
   if(!empty($supplier)) echo "Supplier name of the invoice is: " . $supplier;
