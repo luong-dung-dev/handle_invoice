@@ -10,8 +10,8 @@
 
     public function parseCsvToArray() {
       $lines = array();
-      
-      $file = fopen($this->file, 'r');
+      $file  = fopen($this->file, 'r');
+
       while (($line = fgetcsv($file)) !== FALSE) {
         array_push($lines,$line);
       }
@@ -22,8 +22,8 @@
 
     public function parseJsonToArray() {
       $lines = array();
+      $file  = fopen($this->file, 'r');
 
-      $file = fopen($this->file, 'r');
       while (($line = fgets($file)) !== FALSE) {
         $line = str_replace("'", '"', $line);
         array_push($lines, json_decode($line));
