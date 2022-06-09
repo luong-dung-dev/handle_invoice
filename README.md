@@ -21,5 +21,5 @@ Supplier name of the invoice is: Demo Company
 
 To change the invoice data and supplier names data, update the name file to the new data file when instantiating the Handle class in the main.php.
 ```
-$h = new Handle("invoice.txt", "suppliernames.txt");
+$handle = new Handle("invoice.txt", "suppliernames.txt");
 ```
